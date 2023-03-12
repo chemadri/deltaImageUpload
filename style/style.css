@@ -1,0 +1,214 @@
+@font-face {
+	font-family: Whitney;
+	src: url("../font/whitneylight.otf");
+}
+
+@font-face {
+	font-family: Whitney-Semibold;
+	src: url("../font/Whitney-Semibold.ttf");
+}
+
+@font-face {
+	font-family: Whitney-Book-Font;
+	src: url("../font/Whitney-Book-Font.otf");
+}
+
+
+*{
+	font-family: Whitney;
+	font-style: normal;
+}
+
+body{
+	/* background: #F9F8F9; */
+	background: #133366;
+}
+
+.nav-bg{
+	background-color: #11172B;
+}
+
+.widget-img{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.uploadOuter {
+    text-align: center;
+    padding: 20px;
+  }
+
+.dragBox {
+    width: 450px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    line-height: 95px;
+    color: #999;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+  input[type="file"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  .draging {
+    transform: scale(1.1);
+  }
+
+  .button{
+    color: #4470C3;
+    padding: 10px 30px;
+  }
+
+  .btn-lg{
+    color: transparent;
+  }
+
+  .hr-lines{
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .hr-lines:before{
+    content:" ";
+    display: block;
+    height: 1px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #e8e3e3;
+  }
+
+  .hr-lines:after{
+    content:" ";
+    height: 1px;
+    width: 200px;
+    background: #e8e3e3;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  .text-success{
+    font-size: 1.5rem;
+}
+  .attach-text{
+    font-size: 1.2rem;
+    color: #000;
+  }
+  .reUpload{
+    display: none;
+  }
+
+/* FOOTER */
+.terms-text a{
+	color: #4470C3;
+	text-decoration: none;
+}
+
+.cpoy-right-text{
+	font-size: 0.6rem;
+	color: #FFFFFF;
+	opacity: 0.7;
+}
+
+.cpoy-right-text a{
+	font-size: .7rem;
+	color: #FFFFFF;
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.footer-line{
+	border-bottom: 2px solid #464343;
+}
+
+.lang-text{
+	color: #ffffff;
+	margin-top: 40px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-basis: auto;
+	justify-content: center;
+	align-content: center;
+}
+
+.service-text{
+	font-size: 0.7rem;
+	font-family: Whitney-Book-Font;
+}
+
+.service-link{
+	font-family: Whitney-Semibold;
+}
+
+.mycard{
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+/********** MEDIA QUIRES **********/
+@media screen and (max-width: 540px) {
+    body {
+        background-color: #11172e ;
+    }
+    footer {
+      display: none;
+    }
+    .dragBox {
+        width: 300px;
+    }
+    .main-content{
+        min-height: 40vh;
+    }
+    .hr-lines:before{
+        width: 120px;
+      }
+    
+    .hr-lines:after{
+        width: 120px;
+    }
+    .button{
+        color: #FFFFFF;
+        background-color: #c01933;
+        padding: 10px 30px;
+        border-radius: 3px;
+        border: none;
+    }
+    .mycard{
+        background-color: transparent;
+    }
+    .attach-text-align{
+        text-align: center;
+    }
+    .attach-text{
+        color: #fff;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .text-success{
+        font-size: 1.5rem;
+        color: #ffffff !important;
+    }
+  }
